@@ -25,31 +25,17 @@ function getCountries(){
     .then((data) => {
     console.log(data)
     const fullList = data.supported_codes
-    const countryListSelector = document.querySelector(".countrylist")
+    let countryListSelector = document.querySelector("select")
     // console.log(fullList)
-    
-    fullList.forEach((element) => countryListSelector.innerHTML =
-    console.log(element))
-    // `<option>${element}</option>`)
+
+
+    // loop to add list of countries into the dropdown
+        fullList.forEach((element) => {
+            // console.log(element))
+            // create new node(child) to .append
+            // const newCountry = document.createElement("option")
+            // target append to the parent
+            countryListSelector.options[countryListSelector.options.length] = new Option(element, element)
+        })
     })
 }
-
-
-
-
-
-
-
-
-// function to populate form list with data
-function populateList(fullList){
-    const countryListSelector = document.querySelector(".countrylist")
-    countryListSelector.innerHTML = `<option>${fullList[0]}</option>`
-}
-
-
-getCountries()
-// create new variable to house 
-// call all arrays with country codes
-// const countryAllCodes = fetch(apiURL + "/codes").then((res) => res.json()).then((data) => console.log(data))
-// console.log(countryAllCodes)
