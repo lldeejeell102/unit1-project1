@@ -21,7 +21,7 @@ fetch(apiURL)
 
 The Data I get back:
 ```json
-[
+[(
     result: 'success', documentation: 'https://www.exchangerate-api.com/docs', terms_of_use: 'https://www.exchangerate-api.com/terms', time_last_update_unix: 1701475201, time_last_update_utc: 'Sat, 02 Dec 2023 00:00:01 +0000', …}
     base_code:"EUR"
     conversion_rate:0.8583
@@ -34,13 +34,11 @@ The Data I get back:
     time_last_update_utc:"Sat, 02 Dec 2023 00:00:01 +0000"
     time_next_update_unix:1701561601
     time_next_update_utc:"Sun, 03 Dec 2023 00:00:01 +0000"
-]
+)]
 ```
 
 ## Mockup
-Here put a mix of text explanation plus a picture giving us an idea of the layout of your website.
-
-www.mockflow.com
+Initially I would like to have a very simple presentation of the currency calculator. In the mobile view, I'd like to chanllege myself to have a hamburger menu to house list of all the countries the API can support.
 
 #### Desktop View
 ![My desktop view](https://i.imgur.com/cgYlKYm.png)
