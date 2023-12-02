@@ -13,8 +13,8 @@ I would like to create a simple and easy to use website that allows the user to 
 
 Sample Fetch/Ajax called:
 ```js
-const url = "https://www.perfumeapi.com/ingredients"
-fetch(url)
+const apiURL = "https://v6.exchangerate-api.com/v6/8328e8b00bedc4560803e473/pair/EUR/GBP/100"
+fetch(apiURL)
 .then((res) => res.json())
 .then((data) => console.log(data))
 ```
@@ -22,46 +22,18 @@ fetch(url)
 The Data I get back:
 ```json
 [
-  {
-    "ingredient": "Bergamot",
-    "description": "A citrus fruit with a bright, uplifting scent."
-  },
-  {
-    "ingredient": "Lavender",
-    "description": "A flowering plant with a calming, relaxing scent."
-  },
-  {
-    "ingredient": "Rose",
-    "description": "A flowering plant with a romantic, feminine scent."
-  },
-  {
-    "ingredient": "Jasmine",
-    "description": "A flowering plant with an exotic, sensual scent."
-  },
-  {
-    "ingredient": "Sandalwood",
-    "description": "A woody plant with a warm, earthy scent."
-  },
-  {
-    "ingredient": "Patchouli",
-    "description": "A herb with a deep, musky scent."
-  },
-  {
-    "ingredient": "Vanilla",
-    "description": "A spice with a sweet, gourmand scent."
-  },
-  {
-    "ingredient": "Amber",
-    "description": "A fossilized resin with a warm, balsamic scent."
-  },
-  {
-    "ingredient": "Musk",
-    "description": "An animal secretion with a sensual, musky scent."
-  },
-  {
-    "ingredient": "Oud",
-    "description": "A type of agarwood with a dark, mysterious scent."
-  }
+    result: 'success', documentation: 'https://www.exchangerate-api.com/docs', terms_of_use: 'https://www.exchangerate-api.com/terms', time_last_update_unix: 1701475201, time_last_update_utc: 'Sat, 02 Dec 2023 00:00:01 +0000', …}
+    base_code:"EUR"
+    conversion_rate:0.8583
+    conversion_result:85.83
+    documentation:"https://www.exchangerate-api.com/docs"
+    result:"success"
+    target_code:"GBP"
+    terms_of_use:"https://www.exchangerate-api.com/terms"
+    time_last_update_unix:1701475201
+    time_last_update_utc:"Sat, 02 Dec 2023 00:00:01 +0000"
+    time_next_update_unix:1701561601
+    time_next_update_utc:"Sun, 03 Dec 2023 00:00:01 +0000"
 ]
 ```
 
@@ -71,9 +43,9 @@ Here put a mix of text explanation plus a picture giving us an idea of the layou
 www.mockflow.com
 
 #### Desktop View
-![My desktop view](link)
+![My desktop view](https://i.imgur.com/cgYlKYm.png)
 #### Mobile View
-![My mobile view](link)
+![My mobile view](https://i.imgur.com/FEYCs4a.png)
 
 ## Schedule of Work
 | Day | Goal | What I Accomplished |
