@@ -1,6 +1,6 @@
 // URL: https://v6.exchangerate-api.com/v6/
 // API KEY: 8328e8b00bedc4560803e473
-// EXAMPLE URL WITH API CALL: https://v6.exchangerate-api.com/v6/8328e8b00bedc4560803e473/pair/EUR/GBP/100
+// EXAMPLE URL WITH API CALL: https://v6.exchangerate-api.com/v6/8328e8b00bedc4560803e473
 // Current Exchange
 
 // Example API Call
@@ -26,10 +26,10 @@ function getCountries(){
     console.log(data)
     const fullList = data.supported_codes
     let countryListSelector = document.querySelector("select")
-    // console.log(fullList)
+    console.log(fullList)
 
 
-    // loop to add list of countries into the dropdown
+    // loop to add list into the dropdown
         fullList.forEach((element) => {
             // console.log(element))
             // create new node(child) to .append
