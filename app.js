@@ -18,24 +18,37 @@ const apiURL = "https://v6.exchangerate-api.com/v6/8328e8b00bedc4560803e473/"
 // FUNCTIONS
 // ----------------------------------------------------------------------------------
 // function to fetch data for form list
-function getCountries(){
+$input = $(`#amount`)
+
+function getCountries()
+{
     const url = `${apiURL}codes`
     fetch(url)
     .then((res) => {return res.json()})
-    .then((data) => {
-    console.log(data)
-    const fullList = data.supported_codes
-    let countryListSelector = document.querySelector("select")
-    console.log(fullList)
-
-
-    // loop to add list into the dropdown
-        fullList.forEach((element) => {
+    .then((data) => 
+    {
+        console.log(data)
+        const fullList = data.supported_codes
+        let countryListSelector = document.querySelector("select")
+        // console.log(fullList)
+    
+        // loop to add list into the dropdown
+        fullList.forEach((element) => 
+        {
             // console.log(element))
-            // create new node(child) to .append
-            // const newCountry = document.createElement("option")
-            // target append to the parent
             countryListSelector.options[countryListSelector.options.length] = new Option(element, element)
         })
     })
 }
+const $button = $(`#convert-button`)
+$button.on(`click`, (event) => 
+    {
+        // created variable to store country code
+        const $selectedName = $(`#countrylist`).val().slice(0,3);
+        // console.log($selectedName)
+        // created variable to store amount value
+        const $amt = $input.val()
+        console.log($amt)
+
+    })
+// getCountries()
