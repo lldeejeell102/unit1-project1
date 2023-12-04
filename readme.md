@@ -48,8 +48,8 @@ Initially I would like to have a very simple presentation of the currency calcul
 ## Schedule of Work
 | Day | Goal | What I Accomplished |
 |-----|------|---------------------|
-| Sat(1) | Create Readme & Deploy & Get Approval | Created Readme and got approval | 
-| Sun(2) | Build fetch of data in JS file | Fetched country codes and integrated into dropdown | 
+| Sat(1) | Create Readme & Deploy & Get Approval | Created Readme, got approval, fetched country codes and integrated into first dropdown | 
+| Sun(2) | Build fetch of data in JS file | created action button, listener, integegrated country codes into second dropdown, created hamburger menu | 
 | Mon(3) | Render data from API on screen | | 
 | Tues(4)| Build form for user to interact with | | 
 | Wed(5) | Wrap up functionality | | 
