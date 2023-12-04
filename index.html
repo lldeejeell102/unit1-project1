@@ -10,8 +10,21 @@
     <!-- YOUR FILES -->
     <script src="./app.js" defer></script>
     <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="#">currency exchanger</a>
+        <a href="#">current rates</a>
+    </div>
     <header>
         <h1>Currency Exchange</h1>
         <select id="countrylist" class="countrylist">
@@ -19,6 +32,9 @@
         </select>
         <input id="amount" type="number" placeholder="ie 100"></input>
         <button id="convert-button">Convert</button>
+        <select id="selectedcode" class="selectedcode">
+            <option value="ps">Please Select a Country</option>
+        </select>
     </header>
     <main>
 
