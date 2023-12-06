@@ -1,103 +1,226 @@
-.topnav
+@media screen and (max-width: 600px)
 {
-    /* border: solid red 2px; */
-    display:flex;
-    justify-content: space-evenly;
-}
+    .topnav
+    {
+        /* border: solid red 2px; */
+        display:flex;
+        justify-content: space-evenly;
+    }
 
-.title
-{
-    /* border: solid orange 2px; */
-    /* font-family: oswald; */
-    font-weight: 50px;
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 4px;
-    word-spacing: 8px;
-    display:flex;
-    justify-content: center;
-    padding: 50px;
-    background-image: linear-gradient(to bottom right, rgb(136, 197, 197),rgb(19, 19, 229));
-    text-shadow: 1px 1px 3px white;
-}
+    .title
+    {
+        /* border: solid orange 2px; */
+        /* font-family: oswald; */
+        font-weight: 50px;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 4px;
+        word-spacing: 8px;
+        display:flex;
+        justify-content: center;
+        padding: 50px;
+        background-image: linear-gradient(to bottom right, rgb(136, 197, 197),rgb(19, 19, 229));
+        text-shadow: 1px 1px 3px white;
+    }
 
-body
-{
-    border: solid green 2px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    max-width: 100%svh;
-    max-width: 100%svh;
-}
+    body
+    {
+        /* border: solid green 2px; */
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        max-width: 100svh;
+    }
 
-main
-{
-    border: solid red 2px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    /* height: 100%; */
-    /* margin: 1%; */
-}
+    main
+    {
+        /* border: solid red 2px; */
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        /* height: 100%; */
+        /* margin: 1%; */
+    }
 
-.inputs
-{
-    border: solid green 2px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    flex-wrap: wrap;
-    
-}
+    .inputs
+    {
+        border: solid green 2px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
 
-.countryselector1
-{
-    /* justify-content: center; */
-    width: 100%;
-    padding: .25rem;
-}
-.countryselector1-title
-{
-    max-width: 25%;
-    /* text-align: center; */
-}
-
-
-.amountinput
-{
-    width: 100%;
-    /* justify-content: center; */
-    padding: .25rem;
-}
+    .countryselector1
+    {
+        border: solid red 2px;
+        width: 100%;
+        padding: .25rem;
+    }
+    .countryselector1-title
+    {
+        border: solid orange 2px;
+        max-width: 25%;
+    }
 
 
-.countryselector2
-{
-    width: 100%;
-    padding: .25rem;
+    .amountinput
+    {
+        border: solid red 2px;
+        width: 100%;
+        padding: .25rem;
+    }
+    .amountinput-title
+    {
+        border: solid orange 2px;
+        max-width: 25%;
+    }
+
+    .countryselector2
+    {
+        border: solid red 2px;
+        width: 100%;
+        padding: .25rem;
+    }
+    .countryselector2-title
+    {
+        border: solid orange 2px;
+        max-width: 25%;
+    }
+
+    .button
+    {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .result
+    {
+        display:flex;
+    }
+    .rate
+    {
+        display:flex;
+    }
 }
 
 
-.button
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Desktop View CSS */
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 601px)
 {
-    width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.convert-button
-{
-    /* font-family system-ui; */
-    /* text-transform: uppercase; */
-}
-.result
-{
-    display:flex;
-}
-.rate
-{
-    display:flex;
+    .topnav
+    {
+        /* border: solid red 2px; */
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    .title
+    {
+        /* border: solid orange 2px; */
+        /* font-family: oswald; */
+        font-weight: 50px;
+        text-transform: uppercase;
+        line-height: 1;
+        letter-spacing: 4px;
+        word-spacing: 8px;
+        display:flex;
+        justify-content: center;
+        padding: 50px;
+        background-image: linear-gradient(to bottom right, rgb(136, 197, 197),rgb(19, 19, 229));
+        text-shadow: 1px 1px 3px white;
+    }
+
+    body
+    {
+        /* border: solid green 2px; */
+        display:flex;
+        width: 75svw;
+        flex-direction: column;
+        margin-left: 12.5svw;
+        margin-right: 12.5svw;
+        justify-content: center;
+        /* max-height: 75%svh; */
+    }
+
+    main
+    {
+        /* border: solid red 2px; */
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        /* height: 100%; */
+        /* margin: 1%; */
+    }
+
+    .inputs
+    {
+        /* border: solid green 2px; */
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+
+    .countryselector1
+    {
+        /* border: solid red 2px; */
+        width: 100%;
+        padding: .25rem;
+    }
+    .countryselector1-title
+    {
+        /* border: solid orange 2px; */
+        max-width: 25%;
+    }
+
+
+    .amountinput
+    {
+        /* border: solid red 2px; */
+        width: 100%;
+        padding: .25rem;
+    }
+    .amountinput-title
+    {
+        /* border: solid orange 2px; */
+        max-width: 25%;
+    }
+
+    .countryselector2
+    {
+        /* border: solid red 2px; */
+        width: 100%;
+        padding: .25rem;
+    }
+    .countryselector2-title
+    {
+        /* border: solid orange 2px; */
+        max-width: 25%;
+    }
+
+    .button
+    {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .result
+    {
+        display:flex;
+    }
+    .rate
+    {
+        display:flex;
+    }
 }
