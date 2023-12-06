@@ -9,9 +9,14 @@
 // .then((res) => res.json())
 // .then((data) => console.log(data))
 
-
+// ----------------------------------------------------------------------------------
+// VARIABLES
+// ----------------------------------------------------------------------------------
 // Creates varible with URL with API Code
 const apiURL = "https://v6.exchangerate-api.com/v6/8328e8b00bedc4560803e473/"
+let $countryCode = ""
+let $selectedCode = ""
+let $amt = 0
 
 
 // ----------------------------------------------------------------------------------
@@ -42,33 +47,50 @@ function getCountries()
         })
     })
 }
+getCountries()
+
+// on button click, save all users values to use in getConversion function
 const $button = $(`#convert-button`)
 $button.on(`click`, (event) => 
-    {
-        // created variable to store first country code
-        // trimmed off to just the first country code
-        const $countryCode = $(`#countrylist`).val().slice(0,3);
-        console.log($countryCode)
-
-        // created variable to store second country code
-        // trimmed off to just the second country code
-        const $selectedCode = $(`#selectedcode`).val().slice(0,3);
-        console.log($selectedCode)
-        // created variable to store amount value
-        const $amt = $input.val()
-        console.log($amt)
-        
-        // created function to get the conversion rate
-        function getConversion()
-        {
-            const url = `${apiURL}/pair/${$countryCode}/${$selectedCode}/${$amt}`
-            fetch(url)
-            .then((res) => {return res.json()})
-            .then((data) => 
-            {
-                console.log(data)
-            }
-        )}
-        getConversion()
+{
+    // created variable to store first country code
+    // trimmed off to just the first country code
+    $countryCode = $(`#countrylist`).val().slice(0,3);
+    console.log($countryCode)
+    
+    // created variable to store second country code
+    // trimmed off to just the second country code
+    $selectedCode = $(`#selectedcode`).val().slice(0,3);
+    console.log($selectedCode)
+    // created variable to store amount value
+    $amt = $input.val()
+    console.log($amt)
+    getConversion()
     })
-// getCountries()
+
+
+// created function to get the conversion rate
+function getConversion()
+{
+    const url = `${apiURL}/pair/${$countryCode}/${$selectedCode}/${$amt}`
+    fetch(url)
+    .then((res) => {return res.json()})
+    .then((data) => 
+    {
+        console.log(data)
+        const conversionResult = data.conversion_result.toLocaleString('en-US')
+        console.log(conversionResult)
+
+        const conversionRate = data.conversion_rate.toFixed(2).toLocaleString('en-US')
+        console.log(conversionRate)
+
+        // const $displayResult = $("<h3>")
+        // $(".result").append($displayResult).addClass("displayresult").append(conversionResult + "&nbsp;").append($selectedCode)
+    
+        $(".result").html(`<h2 class="displayresult">${conversionResult} ${$selectedCode}</h2>`)
+        
+        // const $displayRate = $("<h3>")
+        $(".rate").html(`<h3 class="displayrate">1 ${$countryCode} : ${conversionRate} ${$selectedCode}</h3>`)
+        // $(".rate").append($displayRate).addClass("displayrate").append("1" + $countryCode + "&nbsp;" + "&#58;" + "&nbsp;").append(conversionRate + "&nbsp;" + $selectedCode)
+    }
+)}

@@ -14,33 +14,39 @@
 </head>
 
 <body>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-        </div>
-        <div class="topnav">
+    <div class="topnav">
             <a href="#">currency exchanger</a>
             <a href="#">current rates</a>
-        </div>
     </div>
     <header>
-        <h1>Currency Exchange</h1>
-        <select id="countrylist" class="countrylist">
-            <option value="ps">Please Select a Country</option>
-        </select>
-        <input id="amount" type="number" placeholder="ie 100"></input>
-        <button id="convert-button">Convert</button>
-        <select id="selectedcode" class="selectedcode">
-            <option value="ps">Please Select a Country</option>
-        </select>
+        <h1>Currency Exchanger</h1>
     </header>
     <main>
-
+        <div class="inputs">
+            <div class="countryselector1">
+                <select id="countrylist" class="countrylist">
+                    <option value="ps">Please Select a Country</option>
+                </select>
+            </div>
+            <div class="amountinput">
+                <input id="amount" type="number" placeholder="ie 100"></input>
+            </div>
+            <div class="countryselector2">
+                <select id="selectedcode" class="selectedcode">
+                    <option value="ps">Please Select a Country</option>
+                </select>
+            </div>
+            <div class="button">
+                <button id="convert-button">Convert</button>
+            </div>
+        </div>
+        <div class="result">
+            <!-- <h3 class="displayresult"></h3> -->
+            
+        </div>
+        <div class="rate">
+            <!-- <h4 class="displayrate"></h4> -->
+        </div>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
