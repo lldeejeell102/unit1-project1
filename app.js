@@ -47,7 +47,7 @@ function getCountries()
         })
     })
 }
-getCountries()
+// getCountries()
 
 // on button click, save all users values to use in getConversion function
 const $button = $(`#convert-button`)
@@ -83,14 +83,8 @@ function getConversion()
 
         const conversionRate = data.conversion_rate.toFixed(2).toLocaleString('en-US')
         console.log(conversionRate)
-
-        // const $displayResult = $("<h3>")
-        // $(".result").append($displayResult).addClass("displayresult").append(conversionResult + "&nbsp;").append($selectedCode)
     
         $(".result").html(`<h2 class="displayresult">${conversionResult} ${$selectedCode}</h2>`)
-        
-        // const $displayRate = $("<h3>")
         $(".rate").html(`<h3 class="displayrate">1 ${$countryCode} : ${conversionRate} ${$selectedCode}</h3>`)
-        // $(".rate").append($displayRate).addClass("displayrate").append("1" + $countryCode + "&nbsp;" + "&#58;" + "&nbsp;").append(conversionRate + "&nbsp;" + $selectedCode)
     }
 )}

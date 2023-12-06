@@ -1,12 +1,29 @@
 .topnav
 {
+    /* border: solid red 2px; */
     display:flex;
     justify-content: space-evenly;
 }
 
+.title
+{
+    /* border: solid orange 2px; */
+    /* font-family: oswald; */
+    font-weight: 50px;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    display:flex;
+    justify-content: center;
+    padding: 50px;
+    background-image: linear-gradient(to bottom right, rgb(136, 197, 197),rgb(19, 19, 229));
+    text-shadow: 1px 1px 3px white;
+}
 
 body
 {
+    border: solid green 2px;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -16,17 +33,65 @@ body
 
 main
 {
+    border: solid red 2px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+    justify-content: space-around;
     /* height: 100%; */
     /* margin: 1%; */
 }
+
 .inputs
 {
+    border: solid green 2px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+
+.countryselector1
+{
+    /* justify-content: center; */
+    width: 100%;
+    padding: .25rem;
+}
+.countryselector1-title
+{
+    max-width: 25%;
+    /* text-align: center; */
+}
+
+
+.amountinput
+{
+    width: 100%;
+    /* justify-content: center; */
+    padding: .25rem;
+}
+
+
+.countryselector2
+{
+    width: 100%;
+    padding: .25rem;
+}
+
+
+.button
+{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.convert-button
+{
+    /* font-family system-ui; */
+    /* text-transform: uppercase; */
 }
 .result
 {

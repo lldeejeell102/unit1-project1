@@ -11,42 +11,50 @@
     <script src="./app.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/hXZxSmM.png">
 </head>
 
 <body>
-    <div class="topnav">
+    <!-- <div class="topnav">
             <a href="#">currency exchanger</a>
             <a href="#">current rates</a>
-    </div>
+    </div> -->
     <header>
-        <h1>Currency Exchanger</h1>
+        <div>
+            <h1 class="title">Currency Exchanger</h1>
+        </div>
     </header>
     <main>
+        <!-- <div class="spacers"></div> -->
         <div class="inputs">
             <div class="countryselector1">
+                <div class="countryselector1-title">From</div>
                 <select id="countrylist" class="countrylist">
                     <option value="ps">Please Select a Country</option>
                 </select>
             </div>
             <div class="amountinput">
+                <div class="amountinput">Amount</div>
                 <input id="amount" type="number" placeholder="ie 100"></input>
             </div>
             <div class="countryselector2">
+                <div class="countryselector2-title">To</div>
                 <select id="selectedcode" class="selectedcode">
                     <option value="ps">Please Select a Country</option>
                 </select>
             </div>
             <div class="button">
-                <button id="convert-button">Convert</button>
+                <button id="convert-button">CONVERT</button>
             </div>
         </div>
-        <div class="result">
-            <!-- <h3 class="displayresult"></h3> -->
-            
-        </div>
-        <div class="rate">
-            <!-- <h4 class="displayrate"></h4> -->
-        </div>
+        <!-- <div class="spacers"></div> -->
     </main>
+    <div class="result">
+        <!-- <h3 class="displayresult"></h3> -->    
+    </div>
+    <div class="rate">
+        <!-- <h4 class="displayrate"></h4> -->
+    </div>
 </body>
 </html>
