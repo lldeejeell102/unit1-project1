@@ -52,6 +52,6 @@ Initially I would like to have a very simple presentation of the currency calcul
 | Sun(2) | Build fetch of data in JS file | created action button, listener, integegrated country codes into second dropdown, created hamburger menu | 
 | Mon(3) | Render data from API on screen | removed hamburger menu | 
 | Tues(4)| Build form for user to interact with | finished coding all functionality, started stylzing page, started mobile and desktop layout styling | 
-| Wed(5) | Wrap up functionality | | 
+| Wed(5) | Wrap up functionality | finished with mvp | 
 | Thur(6)| Mobile Layout Styling | | 
 | Fri(7) | Desktop Layout Styling & Finalize | | 
