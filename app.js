@@ -47,7 +47,7 @@ function getCountries()
         })
     })
 }
-// getCountries()
+getCountries()
 
 // on button click, save all users values to use in getConversion function
 const $button = $(`#convert-button`)
