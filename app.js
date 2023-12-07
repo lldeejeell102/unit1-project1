@@ -17,13 +17,13 @@ const apiURL = "https://v6.exchangerate-api.com/v6/8328e8b00bedc4560803e473/"
 let $countryCode = ""
 let $selectedCode = ""
 let $amt = 0
+let $input = $(`#amount`)
 
 
 // ----------------------------------------------------------------------------------
 // FUNCTIONS
 // ----------------------------------------------------------------------------------
 // function to fetch data for form list
-$input = $(`#amount`)
 
 function getCountries()
 {
