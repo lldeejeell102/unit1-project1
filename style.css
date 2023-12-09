@@ -9,7 +9,6 @@ body
 {
     display:flex;
     flex-direction: column;
-    /* justify-content: center; */
     width: 100%;
     background: linear-gradient(-45deg,#ee7752, #e3598e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -49,7 +48,6 @@ header .title
     word-spacing: 8px;
     display:flex;
     padding: 50px;
-    /* background-image: linear-gradient(to bottom right, rgb(136, 197, 197),rgb(19, 19, 229)); */
     background-color: rgb(212, 212, 212, 0.3);
     text-shadow: 3px slategray;
     font-family: 'Montserrat', sans-serif;
@@ -96,7 +94,6 @@ main
     justify-content: center;
     width: 80%;
     padding: .5rem;
-    /* height: 2rem; */
 }
 .countrylist
 {
@@ -117,7 +114,6 @@ main
 }
 .inputs .amountinput
 {
-    /* border: 2px solid white; */
     display: flex;
     justify-items: center;
     flex-direction: column;
@@ -154,11 +150,9 @@ main
     justify-content: center;
     width: 80%;
     padding: 2rem;
-    /* padding-bottom: 2rem; */
 }
 .output
 {
-    /* border: 2px solid red; */
     font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
@@ -169,7 +163,6 @@ main
 }
 .result
 {
-    /* border: 2px solid orange; */
     font-family: 'Montserrat', sans-serif;   
     text-shadow: 3px slategray;
     padding: .5rem;
@@ -182,7 +175,6 @@ main
 }
 .rate
 {
-    /* border: 2px solid green; */
     font-family: 'Montserrat', sans-serif;
     text-shadow: 3px slategray;
     padding: .5rem;

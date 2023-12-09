@@ -54,4 +54,4 @@ Initially I would like to have a very simple presentation of the currency calcul
 | Tues(4)| Build form for user to interact with | finished coding all functionality, started stylzing page, started mobile and desktop layout styling | 
 | Wed(5) | Wrap up functionality | finished with mvp | 
 | Thur(6)| Mobile Layout Styling | | 
-| Fri(7) | Desktop Layout Styling & Finalize | | 
+| Fri(7) | Desktop Layout Styling & Finalize | cleaned up formatting and prepped for presentation | 

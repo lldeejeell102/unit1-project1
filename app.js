@@ -56,15 +56,15 @@ $button.on(`click`, (event) =>
     // created variable to store first country code
     // trimmed off to just the first country code
     $countryCode = $(`#countrylist`).val().slice(0,3);
-    console.log($countryCode)
+    // console.log($countryCode)
     
     // created variable to store second country code
     // trimmed off to just the second country code
     $selectedCode = $(`#selectedcode`).val().slice(0,3);
-    console.log($selectedCode)
+    // console.log($selectedCode)
     // created variable to store amount value
     $amt = $input.val()
-    console.log($amt)
+    // console.log($amt)
     getConversion()
     })
 
